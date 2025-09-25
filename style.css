@@ -1,0 +1,107 @@
+/* =========================
+   Portfolio Dark Professional
+   ========================= */
+
+/* ===== Colors & Variables ===== */
+:root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --card-hover: #1f242c;
+    --text: #f5f5f5;
+    --muted: #bbbbbb;
+    --accent: #4da6ff;
+    --accent-dark: #1e90ff;
+    --radius: 10px;
+    --shadow: 0 6px 16px rgba(0,0,0,0.4);
+    --maxw: 1100px;
+  }
+  
+  /* ===== Reset ===== */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  
+  /* ===== Navbar ===== */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(13,17,23,0.9);
+    backdrop-filter: blur(6px);
+    padding: 12px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--muted);
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  nav a:hover { color: var(--accent); }
+  
+  /* ===== Header ===== */
+  header {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+  }
+  header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+  header h2 { font-size: 1.4rem; font-weight: 400; color: #dbe9ff; margin-bottom: 20px; }
+  header p.lead { max-width: 700px; margin: 0 auto 20px; color: #f0f0f0; font-size:1.1rem; }
+  .header-cta a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 22px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn-primary { background: var(--accent); color: #000; }
+  .btn-secondary { background: #333; color: #fff; }
+  .btn-linkedin { background: #0077b5; color: #fff; }
+  .btn-cv { background: #2ea043; color: #fff; }
+  .header-cta a:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+  
+  /* ===== Sections ===== */
+  section {
+    background: var(--card);
+    margin: 30px auto;
+    padding: 50px 25px;
+    border-radius: var(--radius);
+    max-width: var(--maxw);
+    box-shadow: var(--shadow);
+  }
+  section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: var(--accent);
+  }
+  
+  /* ===== Skills ===== */
+  .skills-grid { max-width:700px; margin:auto; }
+  .skill { margin-bottom: 15px; }
+  .skill p { margin-bottom: 6px; font-weight: 600; color: var(--text); }
+  .progress {
+    background: #2d333b;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 16px;
+  }
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90d
